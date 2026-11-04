@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" width="100%" height="100%">
+  <defs>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F2027" />
+      <stop offset="100%" stop-color="#203A43" />
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#11998e" />
+      <stop offset="100%" stop-color="#38ef7d" />
+    </linearGradient>
+  </defs>
+  <g transform="translate(20, 15)">
+    <path d="M40,110 A45,45 0 0,1 85,35" fill="none" stroke="url(#blueGrad)" stroke-width="12" stroke-linecap="round"/>
+    <path d="M60,110 A45,45 0 0,1 115,20" fill="none" stroke="url(#greenGrad)" stroke-width="12" stroke-linecap="round"/>
+    <path d="M80,110 A45,45 0 0,1 125,55" fill="none" stroke="url(#blueGrad)" stroke-width="8" stroke-linecap="round" stroke-dasharray="1 15" opacity="0.8"/>
+    <circle cx="85" cy="35" r="8" fill="#38ef7d" />
+  </g>
+  <g transform="translate(170, 0)">
+    <text x="0" y="65" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="900" fill="#0F2027" letter-spacing="1">CHAMBER OF</text>
+    <text x="0" y="105" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="900" fill="#11998e" letter-spacing="1">COMMERCE</text>
+    <line x1="0" y1="120" x2="260" y2="120" stroke="#203A43" stroke-width="2" opacity="0.3" />
+    <text x="0" y="135" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" fill="#203A43" letter-spacing="4" opacity="0.8">CONNECT • GROW • INVENT</text>
+  </g>
+</svg>

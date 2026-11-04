@@ -15,34 +15,72 @@
     <script src="scripts/date.js" defer></script>
     <script src="scripts/course.js" defer></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
-        <img src="" alt="site-logo" width="16" height="16">
-        <span>Site Name</span>
+        <img src="images/logo_chamber_of_commerce.svg" alt="site-logo" width="100" height="100">
+        <div class="spanname">
+            <span>Paulo Monroy Cotrina</span>
+        </div>
+       
         <button id="ham-btn" class="hamburguer"></button>
     </header>
 
     <nav id="nav-bar" class="navigation">
         <ul>
             <li class="current"><a href="index.html" aria-current="page">Home</a></li>
-            <li><a href="chamber.html">Chamber</a></li>
+            <li><a href="chamber.html">Chambery</a></li>
             <li><a href="final.html">Final</a></li>
         </ul>
     </nav>
     <main>
         <h1>Home</h1>
-        <section>
-            <h2>About Me</h2>
-        </section>
-        <section>
-            <h2>Student Photo</h2>
-        </section>
-        <section>
+        <div class="grid">
+            <section class="card1">
+            <h2 class="aboutme">About Me</h2>
+            <p>Hello everyone! My name is Paulo Monroy, and I am from Lima,Peru. I currently work as an appliance repair technician for Sansung, and I am studying Software Development at BYU-Idaho. During my mission in Argentina, I developed a love for mate and facturas, and I still enjoy them today.</p>
+
+            </section>
+            <section class="card2">
+                <h2>Student Photo</h2>
+                <div class="img-profile">
+                    <img src="images/profile.jpg" alt="Hello everyone! My name is Paulo Monroy" width="200">
+
+                </div>
+
+            </section>
+            
+            
+        </div>
+    <div class="grid2">
+        <section class="card3">
             <h2>Web Certificate Courses</h2>
+            <div class="course-filters">
+                <button id="all">All Courses</button>
+                <button id="wdd">WDD Courses</button>
+                <button id="cse">CSE Courses</button>
+
+            </div>
+            <p id="credit-total"></p>
+            <div id="course-container"></div>
         </section>
+    </div>
+        
 
     </main>
-    <footer></footer>
+    <footer>
+        <div class="social">
+            <a href="https://github.com/PauloMonroyC" target="_blank"><img src="images/github.svg" alt="Git Hub profile" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/paulo-monroy-166b49391/" target="_blank"><img src="images/linkedin.svg" alt="Linkedin profile" width="16" height="16"></a>
+            <a href="https://www.instagram.com/paulomonroy_4/" target="_blank"><img src="images/instagram.svg" alt="Instagram profile" width="16" height="16"></a>
+        </div>
+
+        <p>&copy; <span id="currentyear"></span> • Paulo Andreé Monroy Cotrina • Lima, Perú</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
