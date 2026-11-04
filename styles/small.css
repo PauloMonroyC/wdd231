@@ -15,7 +15,6 @@ header {
     display: grid;
     grid-template-columns: 150px auto 44px;
     padding: 5px 0 5px 10px;
-    align-items: end;
     align-items: center;
     border-bottom: solid 5px #ddd;
     column-gap: 8px;
@@ -309,11 +308,6 @@ footer{
 .course-card p {
     margin: 6px 0;
     line-height: 1.4;
-}
-
-.course-card.completed {
-    background-color: #d5f5e3;
-    border: 1px solid var(--secondary-color);
 }
 
 #credit-total {
