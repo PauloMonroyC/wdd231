@@ -1,0 +1,30 @@
+{
+    "familyName": "Santos",
+    "moveDate": "20-06-24",
+    "numberOfPeople": 4,
+    "visitedByBishopric": true,
+    "familyMembers":[
+        {
+            "name": "Pedro Santos",
+            "gender": "Male",
+            "birthdate": "1990-05-15"
+
+        },
+        {
+            "name":"Maria Santos",
+            "gender":"Fernale",
+            "birthdate":"1992-08-20"
+
+        },
+        {
+            "name":"Andrea Santos",
+            "gender":"Fernale",
+            "birthdate":"2010-03-05"
+        },
+        {
+            "name":"Luz Santos",
+            "gender":"Male",
+            "birthdate":"2012-11-10"
+        }
+    ]
+}
