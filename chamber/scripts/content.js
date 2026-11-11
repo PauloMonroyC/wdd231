@@ -31,37 +31,46 @@ function displayMembers(members) {
     members.forEach(member => {
         const card = document.createElement('article');
         const name = document.createElement('h2');
-        const logo = document.createElement('img');
         const category = document.createElement('p');
+        const logo = document.createElement('img');
         const address = document.createElement('p');
         const phone = document.createElement('p');
         const website = document.createElement('a');
-        const level = document.createElement('p');
         const founded = document.createElement('p');
+        const level = document.createElement('p');
 
         card.classList.add('member-card');
 
         name.textContent = member.name;
-
+        
+        category.textContent = member.category;
+        category.classList.add('tagline');
+        
         logo.setAttribute('src', `images/${member.image}`);
         logo.setAttribute('alt', `${member.name} logo`);
         logo.setAttribute('loading', 'lazy');
         logo.setAttribute('width', '200');
         logo.setAttribute('height', '120');
         
-        category.textContent = member.category;
         address.textContent = member.address;
-        phone.textContent = member.phone;
-        founded.textContent = `Founded: ${member.founded}`;
+        address.classList.add('address');
 
-        website.textContent = 'Visit website';
+        phone.textContent = member.phone;
+        phone.classList.add('phone');
+        
+        website.textContent = member.website.replace(/^https?:\/\//, '');
         website.setAttribute('href', member.website);
         website.setAttribute('target', '_blank');
         website.setAttribute('rel', "noopener");
-
+        website.classList.add('url');
+        
+        founded.textContent = `Founded: ${member.founded}`;
+        founded.classList.add('founded');
+        
         level.textContent = `${levels[member.membershipLevel]} member`;
+        level.classList.add('level', `level-${member.membershipLevel}`);
 
-        card.append(logo, name, category, address, phone, website, level, founded);
+        card.append(name, category, logo, address, phone, website, founded, level);
         membersSection.appendChild(card);
 
     });
@@ -84,3 +93,4 @@ listButton.addEventListener('click', () => {
 
 
 getMembers();
+

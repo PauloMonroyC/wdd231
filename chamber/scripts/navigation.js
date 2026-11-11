@@ -7,3 +7,4 @@ navButton.addEventListener('click', () => {
 });
 
 const navBar = document.querySelector('#nav-bar');
+

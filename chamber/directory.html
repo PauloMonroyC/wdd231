@@ -20,6 +20,7 @@
     <script src="scripts/content.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/darkmode.js" defer></script>
 
     <!--FONT NEEDED-->
 
@@ -33,6 +34,7 @@
         <div class="spanname">
             <span>Lima Chamber of Commerce</span>  
         </div>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false">◐</button>
         <button id="ham-btn" class="hamburguer" aria-label="Toggle navigation menu" aria-expanded="false"></button>
     </header>
     
@@ -62,14 +64,26 @@
     </main>
 
     <footer>
+         <div class="footer-contact">
+            <address>
+                <strong>Lima Chamber of Commerce</strong><br>
+                Av. Larco 345, Miraflores<br>
+                Lima, Perú<br>
+                <a href="mailto:453anonimo.net@gmail.com">453anonimo.net@gmail.com</a><br>
+                <a href="tel:+51936519990">(+51) 936 519 990</a>
+            </address>
+        </div>
          <div class="social">
             <a href="https://github.com/PauloMonroyC" target="_blank"><img src="images/github.svg" alt="Git Hub profile" width="16" height="16"></a>
             <a href="https://www.linkedin.com/in/paulo-monroy-166b49391/" target="_blank"><img src="images/linkedin.svg" alt="Linkedin profile" width="16" height="16"></a>
             <a href="https://www.instagram.com/paulomonroy_4/" target="_blank"><img src="images/instagram.svg" alt="Instagram profile" width="16" height="16"></a>
         </div>
+        <div class="footer-info">
+             <p>WDD 231 Chamber of Commerce Project</p>
+            <p>&copy; <span id="currentyear"></span> • Paulo Andreé Monroy Cotrina • Lima, Perú</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
 
-        <p>&copy; <span id="currentyear"></span> • Paulo Andreé Monroy Cotrina • Lima, Perú</p>
-        <p id="lastModified"></p>
     </footer>
 </body>
 </html>

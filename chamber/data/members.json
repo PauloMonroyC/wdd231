@@ -5,7 +5,7 @@
             "address": "Av. Larco 345, Miraflores, Lima",
             "phone": "+51 1 445 1020",
             "website": "https://www.cafemiraflores.example",
-            "image": "cafe-miraflores.webp",
+            "image": "cafe-miraflores.svg",
             "membershipLevel": 3,
             "category": "Food & Beverage",
             "founded": 2012
@@ -15,7 +15,7 @@
             "address": "Av. Javier Prado Este 1280, San Isidro, Lima",
             "phone": "+51 1 612 3344",
             "website": "https://www.andestech.example",
-            "image": "andes-tech.webp",
+            "image": "andes-tech.svg",
             "membershipLevel": 3,
             "category": "Technology",
             "founded": 2015
@@ -27,7 +27,7 @@
             "address": "Jr. de la Unión 560, Cercado de Lima",
             "phone": "+51 1 428 7788",
             "website": "https://www.incatextiles.example",
-            "image": "inca-textiles.webp",
+            "image": "inca-textiles.svg",
             "membershipLevel": 2,
             "category": "Retail",
             "founded": 2008
@@ -39,7 +39,7 @@
             "address": "Malecón de la Reserva 610, Miraflores, Lima",
             "phone": "+51 1 446 9090",
             "website": "https://www.pacificoseafood.example",
-            "image": "pacifico-seafood.webp",
+            "image": "pacifico-seafood.svg",
             "membershipLevel": 2,
             "category": "Restaurant",
             "founded": 2010
@@ -51,7 +51,7 @@
             "address": "Av. Alfonso Ugarte 890, Breña, Lima",
             "phone": "+51 1 330 5566",
             "website": "https://www.rimacauto.example",
-            "image": "rimac-auto.webp",
+            "image": "rimac-auto.svg",
             "membershipLevel": 1,
             "category": "Automotive",
             "founded": 2005
@@ -63,7 +63,7 @@
             "address": "Calle Los Pinos 215, Surco, Lima",
             "phone": "+51 1 275 4100",
             "website": "https://www.verdevida.example",
-            "image": "verde-vida.webp",
+            "image": "verde-vida.svg",
             "membershipLevel": 1,
             "category": "Grocery",
             "founded": 2018
@@ -75,7 +75,7 @@
             "address": "Av. República de Panamá 3055, San Isidro, Lima",
             "phone": "+51 1 224 8800",
             "website": "https://www.limalegal.example",
-            "image": "lima-legal.webp",
+            "image": "lima-legal.svg",
             "membershipLevel": 2,
             "category": "Professional Services",
             "founded": 2001
@@ -87,7 +87,7 @@
             "address": "Av. Benavides 1750, Surco, Lima",
             "phone": "+51 1 271 6020",
             "website": "https://www.solylunafitness.example",
-            "image": "sol-y-luna.webp",
+            "image": "sol-y-luna.svg",
             "membershipLevel": 1,
             "category": "Health & Wellness",
             "founded": 2016
