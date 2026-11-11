@@ -16,9 +16,9 @@ async function getMembers() {
 
         }
 
-        const members = await response.json();
+        const data = await response.json();
 
-        displayMembers(members);
+        displayMembers(data.companies);
 
     }   catch (error) {
         console.error(error);
@@ -51,7 +51,8 @@ function displayMembers(members) {
         
         category.textContent = member.category;
         address.textContent = member.address;
-        phone,textContent = member.phone;
+        phone.textContent = member.phone;
+        founded.textContent = `Founded: ${member.founded}`;
 
         website.textContent = 'Visit website';
         website.setAttribute('href', member.website);
@@ -60,8 +61,26 @@ function displayMembers(members) {
 
         level.textContent = `${levels[member.membershipLevel]} member`;
 
-        card.append(logo, name, category, address, phone, website, level);
+        card.append(logo, name, category, address, phone, website, level, founded);
         membersSection.appendChild(card);
 
     });
 }
+
+gridButton.addEventListener('click', () => {
+    membersSection.classList.add('grid');
+    membersSection.classList.remove('list');
+    gridButton.setAttribute('aria-pressed', 'true');
+    listButton.setAttribute('aria-pressed', 'false');
+});
+
+
+listButton.addEventListener('click', () => {
+    membersSection.classList.add('list');
+    membersSection.classList.remove('grid');
+    listButton.setAttribute('aria-pressed', 'true');
+    gridButton.setAttribute('aria-pressed', 'false');
+});
+
+
+getMembers();
