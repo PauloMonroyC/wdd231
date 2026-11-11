@@ -7,3 +7,93 @@
 
 
 }
+
+*{
+    box-sizing: border-box;
+}
+/*------------------ GRID FOR THE HEADER------------------------- */
+
+header {
+    display: grid;
+    grid-template-columns: 150px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: center;
+    border-bottom: solid 5px #ddd;
+    column-gap: 8px;
+   
+  
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+   
+}
+
+header span {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+
+}
+
+/*------------------ HAMBURGUER BUTTON------------------------- */
+
+.hamburguer::before{
+    content: "\2630";
+}
+
+.hamburguer.show::before{
+    content:"\000D7 ";
+}
+
+.hamburguer {
+    background: none;
+    border: none;
+    color: var(--secondary-color);
+    cursor: pointer;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+/*------------------ NAVIGATION MENU------------------------- */
+
+.navigation {
+    display: none;
+
+}
+
+.navigation.show{
+    display: block;
+}
+
+.navigation ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    
+    display: block;
+    font-weight: 600;
+    padding: .5rem 10px;
+    color: var(--secondary-color);
+    text-decoration: none;
+    border-bottom: solid 1px #ddd
+       
+}
+
+.navigation li.current{
+    
+    border-bottom: solid 5px #ddd;
+    background-color: #eee;
+}
+
+.navigation a:hover {
+    background-color: #BEF8D6;
+}
+
