@@ -453,6 +453,7 @@ footer a {
   align-items: center;
   gap: 1rem;
   padding: 0 1rem;
+  min-height: 4.5rem;
 }
 
 .weather-now img {
@@ -476,11 +477,15 @@ footer a {
 
 
 #spotlights {
+  min-height: 30rem;
+  align-content: start;
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
   padding: 0 1rem 1rem;
 }
+
+
 
 .spotlight-card {
   display: flex;
@@ -527,8 +532,4 @@ footer a {
 }
 
 
-#spotlights { min-height: 30rem;
-align-content: start; 
-}
-.weather-now { min-height: 4.5rem; }
 #forecast { min-height: 5rem; }
