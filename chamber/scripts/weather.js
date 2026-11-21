@@ -7,7 +7,7 @@ const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${LAT}
 
 const currentTemp = document.querySelector('#current-temp');
 const weatherDesc = document.querySelector('#weather-desc');
-const weatherIcon = document.querySelector('#weather-icon');
+const weatherNow = document.querySelector('.weather-now');
 const forecastList = document.querySelector('#forecast');
 
 
@@ -20,9 +20,12 @@ async function getCurrentWeather() {
     currentTemp.textContent = `${Math.round(data.main.temp)}°C`;
     weatherDesc.textContent = data.weather[0].description;
 
-    weatherIcon.setAttribute('src', `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`);
-    weatherIcon.setAttribute('alt', data.weather[0].description);
-    weatherIcon.removeAttribute('hidden');
+    const icon = document.createElement('img');
+    icon.setAttribute('src', `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`);
+    icon.setAttribute('alt', '');
+    icon.setAttribute('width', '100');
+    icon.setAttribute('height', '100');
+    weatherNow.prepend(icon);
   } catch (error) {
     console.error(error);
     weatherDesc.textContent = 'Weather data is not available right now.';
