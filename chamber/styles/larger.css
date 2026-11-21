@@ -65,3 +65,22 @@
   }
 }
 
+@media only screen and (min-width: 48rem) {
+  .home-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1.5rem 2rem;
+  }
+
+    #spotlights-section {
+    grid-column: 1 / -1;
+  }
+
+   #spotlights {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+    .cta {
+    bottom: 2rem;
+    font-size: 1.2rem;
+  }
+}

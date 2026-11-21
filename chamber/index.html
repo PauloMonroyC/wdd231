@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231 | Chamber Home Page</title>
+    <title> Chamber Home Page </title>
     <meta name="description" content="Welcome to the Lima Chamber of Commerce. Connect with local businesses, check the weather, discover upcoming events, and join our growing community.">
     <meta name="author" content="Paulo Andree Monroy Cotrina">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://paulomonroyc.github.io/wdd231/chamber/index.html">
-    <meta property="og:title" content="WDD 231 | Chamber Home Pagee">
+    <meta property="og:title" content="Chamber Home Page">
     <meta property="og:description" content="Welcome to the Lima Chamber of Commerce. Connect with local businesses, check the weather, discover upcoming events, and join our growing community.">
-    <meta property="og:image" content="https://PauloMonroyC.github.io/wdd231/chamber/images/logo-horizontal.png">
+    <meta property="og:image" content="https://paulomonroyc.github.io/wdd231/chamber/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Lima Chamber of Commerce, connecting local businesses">
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
@@ -58,13 +61,40 @@
     
     
     <main>
-        
+        <h1 class="visually-hidden">Welcome to the Lima Chamber of Commerce</h1>
+        <section class="hero">
+            <img src="images/hero.webp" srcset="images/hero-small.webp 600w, images/hero.webp 1200w" sizes="100vw" alt="Sunset over the Lima skyline and the Pacific Ocean" width="1200" height="600" fetchpriority="high">
+            <a href="join.html" class="cta">Join the Chamber</a>
+        </section>
 
+        <div class="home-grid">
+            <section class="home-card" id="events">
+                <h2>Upcoming Events</h2>
+                <ul>
+                    <li><strong>Nov 28:</strong> Business Networking Breakfast</li>
+                    <li><strong>Dec 25:</strong> Small Business Workshop</li>
+                    <li><strong>Dec 12:</strong> Holiday Market in Miraflores</li>
+                    
+                </ul>
+            </section>
 
+            <section class="home-card" id="weather">
+                <h2>Lima Weather</h2>
+                <div class="weather-now">
+                    <img id="weather-icon" alt="" width="100" height="100" hidden>
+                    <p><span id="current-temp"></span> <span id="weather-desc"></span></p>
+                </div>     
 
+                <h3>3-Day Forecast</h3>          
+                <ul id="forecast"></ul> 
+            </section>
+            
+            <section class="home-card" id="spotlights-section">
+                <h2>Member Spotlights</h2>
+                <div id="spotlights"></div>
+            </section>
 
-
-
+        </div>
     </main>
 
     <footer>
@@ -74,13 +104,13 @@
                 Av. Larco 345, Miraflores<br>
                 Lima, Perú<br>
                 <a href="mailto:453anonimo.net@gmail.com">453anonimo.net@gmail.com</a><br>
-                <a href="tel:+51936519990">(+51) 936 519 990</a>
+                <a href="tel:+51912816783">(+51) 912 816 783/a>
             </address>
         </div>
          <div class="social">
-            <a href="https://github.com/PauloMonroyC" target="_blank"><img src="images/github.svg" alt="Git Hub profile" width="16" height="16"></a>
-            <a href="https://www.linkedin.com/in/paulo-monroy-166b49391/" target="_blank"><img src="images/linkedin.svg" alt="Linkedin profile" width="16" height="16"></a>
-            <a href="https://www.instagram.com/paulomonroy_4/" target="_blank"><img src="images/instagram.svg" alt="Instagram profile" width="16" height="16"></a>
+            <a href="https://github.com/PauloMonroyC" target="_blank"><img src="images/github.svg" alt="Git Hub profile" width="24" height="24"></a>
+            <a href="https://www.linkedin.com/in/paulo-monroy-166b49391/" target="_blank"><img src="images/linkedin.svg" alt="Linkedin profile" width="24" height="24"></a>
+            <a href="https://www.instagram.com/paulomonroy_4/" target="_blank"><img src="images/instagram.svg" alt="Instagram profile" width="24" height="24"></a>
         </div>
         <div class="footer-info">
              <p>WDD 231 Chamber of Commerce Project</p>

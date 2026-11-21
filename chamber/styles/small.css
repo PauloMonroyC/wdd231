@@ -367,3 +367,146 @@ footer a {
 #members {
   min-height: 80vh;
 }
+
+/*------------------------------------*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/*--------------- HERO ---------------------*/
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.cta {
+  position: absolute;
+  left: 50%;
+  bottom: 1rem;
+  transform: translateX(-50%);
+  padding: 0.75rem 1.5rem;
+  font-weight: 700;
+  color: #202C25;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: var(--accent-color);
+  border-radius: 6px;
+}
+
+.cta:hover,
+.cta:focus-visible {
+  background-color: #FFFFFF;
+}
+
+.cta:focus-visible {
+  outline: 3px solid #FFFFFF;
+  outline-offset: 2px;
+}
+
+
+.home-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.home-card {
+  background-color: var(--surface-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.home-card h2 {
+  margin: 0 0 1rem;
+  padding: 0.6rem 1rem;
+  font-size: 1.2rem;
+  color: var(--on-primary);
+  background-color: var(--primary-color);
+  border-bottom: 3px solid var(--accent-color);
+}
+
+.home-card h3 {
+  margin: 1rem 1rem 0.5rem;
+}
+
+.home-card ul {
+  margin: 0;
+  padding: 0 1rem 1rem 2rem;
+}
+
+.weather-now {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.weather-now img {
+  width: 4rem;
+  height: auto;
+}
+
+.weather-now p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+#current-temp {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+#weather-desc {
+  text-transform: capitalize;
+}
+
+
+#spotlights {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 0 1rem 1rem;
+}
+
+.spotlight-card {
+  display: grid;
+  gap: 0.25rem;
+  justify-items: center;
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid var(--accent-color);
+  border-radius: 8px;
+}
+
+.spotlight-card h3 {
+  margin: 0;
+}
+
+.spotlight-card p {
+  margin: 0;
+}
+
+.spotlight-card img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+.spotlight-card a {
+  color: var(--link-color);
+  overflow-wrap: anywhere;
+}
+
