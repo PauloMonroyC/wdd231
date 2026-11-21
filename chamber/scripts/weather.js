@@ -20,12 +20,9 @@ async function getCurrentWeather() {
     currentTemp.textContent = `${Math.round(data.main.temp)}°C`;
     weatherDesc.textContent = data.weather[0].description;
 
-    const icon = document.createElement('img');
-    icon.setAttribute('src', `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`);
-    icon.setAttribute('alt', '');
-    icon.setAttribute('width', '100');
-    icon.setAttribute('height', '100');
-    weatherNow.prepend(icon);
+    weatherIcon.setAttribute('src', `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`);
+    weatherIcon.setAttribute('alt', data.weather[0].description);
+    weatherIcon.removeAttribute('hidden');
   } catch (error) {
     console.error(error);
     weatherDesc.textContent = 'Weather data is not available right now.';
