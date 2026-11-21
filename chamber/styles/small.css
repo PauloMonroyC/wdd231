@@ -197,6 +197,7 @@ a {
 }
 
 .level {
+  line-height: 1.4;
   display: inline-block;
   justify-self: start;
   padding: 0.15rem 0.6rem;
@@ -482,23 +483,20 @@ footer a {
 }
 
 .spotlight-card {
-  display: grid;
-  gap: 0.25rem;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
   padding: 1rem;
   text-align: center;
   border: 1px solid var(--accent-color);
   border-radius: 8px;
 }
 
-.spotlight-card h3 {
-  margin: 0;
-}
-
+.spotlight-card h3,
 .spotlight-card p {
   margin: 0;
 }
-
 .spotlight-card img {
   width: 100%;
   max-width: 200px;
@@ -506,7 +504,31 @@ footer a {
 }
 
 .spotlight-card a {
+  font-size: 0.85rem;
   color: var(--link-color);
   overflow-wrap: anywhere;
 }
 
+.spotlight-card .level {
+  margin-top: auto;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+}
+.skip-link:focus {
+  left: 0.5rem;
+  top: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: var(--on-primary);
+  background-color: var(--primary-color);
+  z-index: 10;
+}
+
+
+#spotlights { min-height: 30rem;
+align-content: start; 
+}
+.weather-now { min-height: 4.5rem; }
+#forecast { min-height: 5rem; }
