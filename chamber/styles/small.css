@@ -458,8 +458,14 @@ footer a {
 }
 
 .weather-now img {
-  width: 4rem;
-  height: auto;
+   width: 4.5rem;
+  height: 4.5rem;
+  padding: 0.25rem;
+  object-fit: contain;
+  background-color: var(--primary-color);
+  border: 2px solid var(--accent-color);
+  border-radius: 50%;
+  flex-shrink: 0;
 }
 
 .weather-now p {
