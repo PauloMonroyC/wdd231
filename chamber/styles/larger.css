@@ -59,6 +59,12 @@
     padding: 1.5rem 2rem;
     text-align: left;
   }
+  
+  
+  footer address a {
+  margin-inline: 0;
+
+    }
 
   .footer-info {
     justify-self: end;
