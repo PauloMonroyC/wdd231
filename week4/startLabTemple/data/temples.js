@@ -1,5 +1,5 @@
 //https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/
-
+export const url = "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/"
 export const temples = [
     {
         "number": "1",
@@ -210,6 +210,13 @@ export const temples = [
         "dedicated": "October, 1984",
         "person": "Gordon B. Hinckley",
         "path": "dallas-texas/400x250/dallas-temple-lds-1048888-wallpaper.jpg"
+    },
+    {
+        "number": "38",
+        "name": "Lima Peru Temple",
+        "dedicated": "January, 1986",
+        "person": "Gordon B. Hinckley",
+        "path": "lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg"
     }
 ]
 
